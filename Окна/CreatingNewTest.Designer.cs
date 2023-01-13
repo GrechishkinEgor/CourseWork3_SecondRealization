@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.GeneralGroupBox = new System.Windows.Forms.GroupBox();
-            this.TestNameLabel = new System.Windows.Forms.Label();
-            this.TestNameTextBox = new System.Windows.Forms.TextBox();
             this.RandomOrderCheckBox = new System.Windows.Forms.CheckBox();
+            this.TestNameTextBox = new System.Windows.Forms.TextBox();
+            this.TestNameLabel = new System.Windows.Forms.Label();
             this.OKButton = new System.Windows.Forms.Button();
             this.GeneralGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -48,23 +48,6 @@
             this.GeneralGroupBox.TabStop = false;
             this.GeneralGroupBox.Text = "Параметры теста";
             // 
-            // TestNameLabel
-            // 
-            this.TestNameLabel.AutoSize = true;
-            this.TestNameLabel.Location = new System.Drawing.Point(6, 24);
-            this.TestNameLabel.Name = "TestNameLabel";
-            this.TestNameLabel.Size = new System.Drawing.Size(93, 15);
-            this.TestNameLabel.TabIndex = 0;
-            this.TestNameLabel.Text = "Название теста:";
-            // 
-            // TestNameTextBox
-            // 
-            this.TestNameTextBox.Location = new System.Drawing.Point(105, 21);
-            this.TestNameTextBox.MaxLength = 256;
-            this.TestNameTextBox.Name = "TestNameTextBox";
-            this.TestNameTextBox.Size = new System.Drawing.Size(221, 23);
-            this.TestNameTextBox.TabIndex = 1;
-            // 
             // RandomOrderCheckBox
             // 
             this.RandomOrderCheckBox.AutoSize = true;
@@ -74,6 +57,23 @@
             this.RandomOrderCheckBox.TabIndex = 2;
             this.RandomOrderCheckBox.Text = "Выдавать задания в случайном порядке";
             this.RandomOrderCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // TestNameTextBox
+            // 
+            this.TestNameTextBox.Location = new System.Drawing.Point(105, 21);
+            this.TestNameTextBox.MaxLength = 256;
+            this.TestNameTextBox.Name = "TestNameTextBox";
+            this.TestNameTextBox.Size = new System.Drawing.Size(221, 23);
+            this.TestNameTextBox.TabIndex = 1;
+            // 
+            // TestNameLabel
+            // 
+            this.TestNameLabel.AutoSize = true;
+            this.TestNameLabel.Location = new System.Drawing.Point(6, 24);
+            this.TestNameLabel.Name = "TestNameLabel";
+            this.TestNameLabel.Size = new System.Drawing.Size(93, 15);
+            this.TestNameLabel.TabIndex = 0;
+            this.TestNameLabel.Text = "Название теста:";
             // 
             // OKButton
             // 
@@ -94,6 +94,7 @@
             this.Controls.Add(this.GeneralGroupBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CreatingNewTest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Новый тест";
             this.GeneralGroupBox.ResumeLayout(false);
             this.GeneralGroupBox.PerformLayout();

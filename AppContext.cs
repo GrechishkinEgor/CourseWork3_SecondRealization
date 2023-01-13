@@ -10,14 +10,14 @@ namespace CourseWork
     using CourseWork.Бэкэнд;
     internal class CurrentApplicationContext : ApplicationContext
     {
+        static private Course CurrentCourse = new Course();
+        static private String Path = "";
+
         static private ChoiceMode ChoiceModeWin = new ChoiceMode();
         static private TeacherMode TeacherModeWin = new TeacherMode();
         static private StudentMode StudentModeWin = new StudentMode();
         static private TeacherCourseView TeacherCourseViewWin = new TeacherCourseView();
         static private StudentCourseView StudentCourseViewWin = new StudentCourseView();
-
-        static private Course CurrentCourse = new Course();
-        static private String Path = "";
         
         public CurrentApplicationContext()
         {
